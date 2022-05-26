@@ -40,5 +40,11 @@ function getInfo() {
 
         // Set Condition if the second year is not later than the first year
         if (num2<=num1) txt += `Invalid Input.  The Second Year must be later than the First Year.`;
+    } else {
+        txt += `Your Inputs: <p>`;
+        txt += `First Year - ${num1} <p>`;
+        txt += `Second Year - ${num2} <p>`;
+        txt += `${countingSundays(num1,num2)} Sundays fell on the first month between ${num1} and ${num2}.`;
+
     }
 }
