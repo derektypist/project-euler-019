@@ -97,3 +97,9 @@ function countingSundays(firstYear,lastYear) {
     return numSundays;
 
 }
+
+// Function to Clear Information
+function clearInfo() {
+    let txt = "";
+    document.getElementById("yearsinfo").innerHTML = txt;
+}
