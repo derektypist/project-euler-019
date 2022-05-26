@@ -80,5 +80,6 @@ function countingSundays(firstYear,lastYear) {
         }
     }
 
+    let daysUpToFirst = 0;
     
 }
