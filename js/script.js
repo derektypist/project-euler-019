@@ -7,39 +7,40 @@ function getInfo() {
     let num2 = document.getElementById("myyear2").value;
     // Check if inputs are valid
     if (isNaN(num1) || isNaN(num2) || num1.toString().length == 0 || num2.toString().length == 0 || num1<1901 || num1>2099 || num2<1902 || num2>2100 || !Number.isInteger(Number(num1)) || !Number.isInteger(Number(num2)) || num2<=num1) {
+        txt += `Invalid Input(s) <p>`;
 
         // Set Condition for Not a Number
         if (isNaN(num1) || isNaN(num2)) {
             // Condition if first input is not a number
-            if (isNaN(num1)) txt += `Invalid Input.  The first year must be a number.`;
+            if (isNaN(num1)) txt += `The first year must be a number.  `;
             // Condition if second input is not a number
-            if (isNaN(num2)) txt += `Invalid Input.  The second year must be a number.`;
+            if (isNaN(num2)) txt += `The second year must be a number.  `;
         }
 
         // Set Condition for Empty Inputs
         if (num1.toString().length==0 || num2.toString().length==0) {
             // Condition if first input is empty
-            if (num1.toString().length==0) txt += `Invalid Input.  First Year not entered.`;
+            if (num1.toString().length==0) txt += `First Year not entered.  `;
             // Condition if second input is empty
-            if (num2.toString().length==0) txt += `Invalid Input.  Second Year not entered.`
+            if (num2.toString().length==0) txt += `Second Year not entered.  `;
         }
 
         // Set Condition if First Year is not in range
-        if (num1<1901 || num1>2099) txt += `Invalid Input.  First Year must be between 1901 and 2099.`;
+        if (num1<1901 || num1>2099) txt += `First Year must be between 1901 and 2099.  `;
 
         // Set Condition if Second Year is not in range
-        if (num2<1902 || num2>2100) txt += `Invalid Input.  Second Year must be between 1902 and 2100.`;
+        if (num2<1902 || num2>2100) txt += `Second Year must be between 1902 and 2100.  `;
 
         // Set Conditions for Number not an Integer
         if (!Number.isInteger(Number(num1)) || !Number.isInteger(Number(num2))) {
             // Set Condition if First Year is a number, but not an integer
-            if (!Number.isInteger(Number(num1))) txt += `Invalid Input.  First Year is not a whole number.`;
+            if (!Number.isInteger(Number(num1))) txt += `First Year is not a whole number.  `;
             // Set Condition if Second Year is a number, but not an integer
-            if (!Number.isInteger(Number(num2))) txt += `Invalid Input.  Second Year is not a whole number.`;
+            if (!Number.isInteger(Number(num2))) txt += `Second Year is not a whole number.  `;
         }
 
         // Set Condition if the second year is not later than the first year
-        if (num2<=num1) txt += `Invalid Input.  The Second Year must be later than the First Year.`;
+        if (num2<=num1) txt += `The Second Year must be later than the First Year.`;
     } else {
         txt += `Your Inputs: <p>`;
         txt += `First Year - ${num1} <p>`;
