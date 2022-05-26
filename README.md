@@ -4,10 +4,15 @@ You are given the following information, but you may prefer to do some research 
 
 - 1 Jan 1900 was a Monday
 - Thirty Days has September,
+
   April, June and November.
+
   All the rest have thirty-one,
+
   Saving February alone,
+
   Which has twenty-eight, rain or shine.
+
   And on leap years, twenty-nine.
 
 A leap year occurs on any year divisible by 4, but not on a century, unless it is divisible by 400.
@@ -62,4 +67,23 @@ Allows the user to enter years.  Finds the number of Sundays that fell in the fi
 ## Technologies
 
 Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.0-Beta1 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-019) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
   
