@@ -50,3 +50,20 @@ function getInfo() {
     // Display Information in the Browser
     document.getElementById("yearsinfo").innerHTML = txt;
 }
+
+/*
+     Function to return the Number of Sundays that fell on the first of the
+     month during the given years
+     countingSundays(1943,1946) returns 6
+     countingSundays(1995,2000) returns 10
+     countingSundays(1901,2000) returns 171
+*/
+function countingSundays(firstYear,lastYear) {
+    function isLeapYear(year) {
+        return year % 4 == 0 && (year % 100 !==0 || year % 400 === 0);
+    }
+
+    function daysInMonth(month,year) {
+        
+    }
+}
