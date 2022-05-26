@@ -45,6 +45,8 @@ function getInfo() {
         txt += `First Year - ${num1} <p>`;
         txt += `Second Year - ${num2} <p>`;
         txt += `${countingSundays(num1,num2)} Sundays fell on the first month between ${num1} and ${num2}.`;
-
     }
+
+    // Display Information in the Browser
+    document.getElementById("yearsinfo").innerHTML = txt;
 }
