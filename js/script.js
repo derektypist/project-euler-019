@@ -6,7 +6,7 @@ function getInfo() {
     let num1 = document.getElementById("myyear1").value;
     let num2 = document.getElementById("myyear2").value;
     // Check if inputs are valid
-    if (isNaN(num1) || isNaN(num2) || num1.toString().length == 0 || num2.toString().length == 0 || num1<1900 || num1>2099 || num2<1901 || num2>2100 || !Number.isInteger(Number(num1)) || !Number.isInteger(Number(num2)) || num2<=num1) {
+    if (isNaN(num1) || isNaN(num2) || num1.toString().length == 0 || num2.toString().length == 0 || num1<1901 || num1>2099 || num2<1902 || num2>2100 || !Number.isInteger(Number(num1)) || !Number.isInteger(Number(num2)) || num2<=num1) {
 
         // Set Condition for Not a Number
         if (isNaN(num1) || isNaN(num2)) {
@@ -25,10 +25,10 @@ function getInfo() {
         }
 
         // Set Condition if First Year is not in range
-        if (num1<1900 || num1>2099) txt += `Invalid Input.  First Year must be between 1900 and 2099.`;
+        if (num1<1901 || num1>2099) txt += `Invalid Input.  First Year must be between 1901 and 2099.`;
 
         // Set Condition if Second Year is not in range
-        if (num2<1901 || num2>2100) txt += `Invalid Input.  Second Year must be between 1901 and 2100.`;
+        if (num2<1902 || num2>2100) txt += `Invalid Input.  Second Year must be between 1902 and 2100.`;
 
         // Set Conditions for Number not an Integer
         if (!Number.isInteger(Number(num1)) || !Number.isInteger(Number(num2))) {
@@ -81,5 +81,5 @@ function countingSundays(firstYear,lastYear) {
     }
 
     let daysUpToFirst = 0;
-    
+
 }
