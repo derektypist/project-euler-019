@@ -81,5 +81,19 @@ function countingSundays(firstYear,lastYear) {
     }
 
     let daysUpToFirst = 0;
+    for (let year=1900;year<firstYear;year++) {
+        daysUpToFirst += isLeapYear(year) ? 366 : 365;
+    }
+
+    let firstDay = (daysUpToFirst % 7) + 1;
+    let firstOfMonth = firstDay;
+    let numSundays = 0;
+    for (let year=firstYear;year<=lastYear;year++) {
+        for (let month=0;month<12;month++) {
+            if (firstOfMonth % 7 === 0) numSundays++;
+            firstOfMonth += daysInMonth(month,year);
+        }
+    }
+    return numSundays;
 
 }
